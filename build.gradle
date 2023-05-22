@@ -1,0 +1,11 @@
+
+defaultTasks 'clean', 'assemble'
+
+allprojects {
+	version = rootProject.file('version.txt').text.trim()
+	group = 'ch.test'
+
+	repositories {
+		mavenCentral()
+	}
+}
